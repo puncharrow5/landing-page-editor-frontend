@@ -1,0 +1,214 @@
+import { gql } from "@apollo/client";
+
+export const FIND_ONE_SITE_BY_ID = gql`
+  query FindOneSiteById($id: Int!) {
+    findOneSiteById(id: $id) {
+      id
+      name
+      email
+      domain
+      components {
+        id
+        componentType
+        name
+        title
+        mobileTitle
+        content
+        mobileContent
+        isDelete
+        siteId
+        componentStyle {
+          id
+          height
+          padding
+          grid
+          gap
+          background
+          backgroundType
+          componentId
+        }
+        componentMobileStyle {
+          id
+          height
+          padding
+          grid
+          gap
+          background
+          backgroundType
+          componentId
+        }
+        titleStyle {
+          id
+          margin
+          mobileMargin
+          size
+          mobileSize
+          color
+          mobileColor
+          lineHeight
+          mobileLineHeight
+          componentId
+        }
+        contentStyle {
+          id
+          margin
+          mobileMargin
+          size
+          mobileSize
+          color
+          mobileColor
+          mobileLineHeight
+          lineHeight
+          componentId
+        }
+        inquiryStyle {
+          id
+          padding
+          gap
+          textSize
+          textColor
+          lineHeight
+          backgroundColor
+          buttonWidth
+          buttonHeight
+          buttonTextSize
+          buttonTextColor
+          buttonColor
+          buttonRadius
+          componentId
+        }
+        mobileInquiryStyle {
+          id
+          padding
+          gap
+          textSize
+          textColor
+          lineHeight
+          backgroundColor
+          buttonWidth
+          buttonHeight
+          buttonTextSize
+          buttonTextColor
+          buttonColor
+          buttonRadius
+          componentId
+        }
+        children {
+          id
+          title
+          content
+          isDelete
+          componentId
+          childStyle {
+            id
+            width
+            height
+            margin
+            padding
+            background
+            backgroundType
+            border
+            borderRadius
+            titleSize
+            titleColor
+            titleLineHeight
+            titleMargin
+            contentSize
+            contentColor
+            contentLineHeight
+            contentMargin
+            childId
+          }
+        }
+        mobileChildren {
+          id
+          title
+          content
+          isDelete
+          componentId
+          mobileChildStyle {
+            id
+            width
+            height
+            margin
+            padding
+            background
+            backgroundType
+            border
+            borderRadius
+            titleSize
+            titleColor
+            titleLineHeight
+            titleMargin
+            contentSize
+            contentColor
+            contentLineHeight
+            contentMargin
+            mobileChildId
+          }
+        }
+      }
+      header {
+        id
+        logo
+        logoSize
+        height
+        padding
+        gap
+        backgroundColor
+        textSize
+        textColor
+        siteId
+      }
+      mobileHeader {
+        id
+        logo
+        logoSize
+        button
+        buttonSize
+        height
+        padding
+        menuPadding
+        backgroundColor
+        menuBackgroundColor
+        textSize
+        textColor
+        siteId
+      }
+      footer {
+        id
+        footerType
+        logo
+        logoSize
+        contentTop
+        helpCenter
+        terms
+        contentBottom
+        backgroundColor
+        paddingTop
+        paddingBottom
+        textSize
+        textColor
+        lineHeight
+        siteId
+      }
+      mobileFooter {
+        id
+        footerType
+        logo
+        logoSize
+        contentTop
+        helpCenter
+        terms
+        contentBottom
+        backgroundColor
+        paddingTop
+        paddingBottom
+        textSize
+        textColor
+        lineHeight
+        siteId
+      }
+    }
+  }
+`;

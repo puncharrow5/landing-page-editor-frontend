@@ -1,0 +1,47 @@
+{
+  "name": "landing-page-editor-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3333",
+    "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.10.5",
+    "@heroicons/react": "^2.1.4",
+    "apollo-upload-client": "^18.0.1",
+    "dayjs": "^1.11.13",
+    "formik": "^2.4.6",
+    "graphql": "^16.8.2",
+    "heroicons": "^2.1.4",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-scroll": "^1.9.0",
+    "react-select": "^5.8.0",
+    "react-spinners": "^0.14.1",
+    "react-toastify": "^10.0.5",
+    "styled-components": "^6.1.11",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.3.0",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.0",
+    "@types/apollo-upload-client": "^18.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
+    "babel-plugin-styled-components": "^2.1.4",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.5"
+  }
+}
