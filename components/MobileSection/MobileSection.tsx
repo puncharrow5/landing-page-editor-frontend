@@ -9,8 +9,6 @@ interface Props {
 }
 
 export const MobileSection = ({ data, id }: Props) => {
-  console.log(data.componentMobileStyle?.grid);
-
   return (
     <S.Container
       id={id}

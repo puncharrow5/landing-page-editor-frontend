@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { FooterEntity } from "@/graphql/generated/types";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import * as S from "./Footer.style";
 
 interface Props {
