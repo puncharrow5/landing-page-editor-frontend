@@ -1,23 +1,22 @@
 import styled from "styled-components";
+import { HeaderEntity } from "@/graphql/generated/types";
 
 export const Header = styled.div<{
-  $height?: string | null;
-  $textSize?: string | null;
-  $textColor?: string | null;
-  $backgroundColor?: string | null;
+  $data?: HeaderEntity | null;
 }>`
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 400px);
-  height: ${({ $height }) => ($height ? $height : "80px")};
+  height: ${({ $data }) => ($data?.height ? $data?.height : "80px")};
   top: 0;
-  padding: 0 40px;
-  font-size: ${({ $textSize }) => ($textSize ? $textSize : "10px")};
+  padding: ${({ $data }) => ($data?.padding ? $data.padding : "")};
+  font-size: ${({ $data }) => ($data?.textSize ? $data.textSize : "10px")};
   font-weight: bold;
-  color: ${({ $textColor }) => ($textColor ? $textColor : "#000")};
-  background-color: ${({ $backgroundColor }) => $backgroundColor ?? "transparent"};
+  color: ${({ $data }) => $data?.textColor ?? "#000"};
+  background-color: ${({ $data }) =>
+    $data?.backgroundColor ? $data.backgroundColor : "transparent"};
   /* border-bottom: 1px solid #e7e7ec; */
 `;
 

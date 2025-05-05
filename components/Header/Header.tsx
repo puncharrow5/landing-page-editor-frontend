@@ -10,12 +10,7 @@ interface Props {
 
 export const Header = ({ data, sectionNames }: Props) => {
   return (
-    <S.Header
-      $height={data?.height}
-      $textSize={data?.textSize}
-      $textColor={data?.textColor}
-      $backgroundColor={data?.backgroundColor}
-    >
+    <S.Header $data={data}>
       {data?.logo ? (
         <S.Logo
           src={`${process.env.NEXT_PUBLIC_BASE_URL}/file/${data.logo}`}
