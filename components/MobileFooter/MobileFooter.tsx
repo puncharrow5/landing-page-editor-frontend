@@ -16,6 +16,7 @@ export const MobileFooter = ({ data, handleOpenTerms }: Props) => {
             <S.Logo
               src={`${process.env.NEXT_PUBLIC_BASE_URL}/file/${data.logo}`}
               alt="로고 이미지"
+              $logoSize={data?.logoSize}
               className="mb-[5px]"
             />
           ) : (

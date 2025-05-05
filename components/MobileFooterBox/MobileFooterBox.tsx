@@ -95,7 +95,7 @@ export const MobileFooterBox = ({ siteId, data, setData, handleReset }: Props) =
     initialValues: {
       footerType: data?.footerType ?? 1,
       logo: data?.logo ?? "",
-      logoSize: data?.logoSize ?? "",
+      logoSize: data?.logoSize ?? "100%",
       contentTop: data?.contentTop ?? "",
       helpCenter: data?.helpCenter ?? "",
       terms: data?.terms ?? "",

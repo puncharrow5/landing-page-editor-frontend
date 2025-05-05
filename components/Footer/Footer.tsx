@@ -17,6 +17,7 @@ export const Footer = ({ data, handleOpenTerms }: Props) => {
             {data?.logo ? (
               <S.Logo
                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/file/${data.logo}`}
+                $logoSize={data?.logoSize}
                 alt="로고 이미지"
               />
             ) : (
