@@ -176,8 +176,8 @@ export const MobileInquiryForm = ({ data, setData, handleReset, handleDelete }: 
       },
       mobileContent: data.mobileContent ?? "",
       contentStyle: {
-        mobileSize: data?.titleStyle?.mobileSize ?? "10px",
-        mobileColor: data?.titleStyle?.mobileColor ?? "#000",
+        mobileSize: data?.contentStyle?.mobileSize ?? "10px",
+        mobileColor: data?.contentStyle?.mobileColor ?? "#000",
         mobileMargin: data.contentStyle?.mobileMargin ?? "",
         mobileLineHeight: data.contentStyle?.mobileLineHeight ?? 1,
       },
