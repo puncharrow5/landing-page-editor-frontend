@@ -9,6 +9,8 @@ interface Props {
 }
 
 export const MobileSection = ({ data, id }: Props) => {
+  console.log(data.componentMobileStyle?.grid);
+
   return (
     <S.Container
       id={id}
@@ -33,7 +35,10 @@ export const MobileSection = ({ data, id }: Props) => {
         $contentStyle={data.contentStyle ?? undefined}
         dangerouslySetInnerHTML={{ __html: data.mobileContent ?? "" }}
       />
-      <S.ChildrenBox>
+      <S.ChildrenBox
+        $gap={data.componentMobileStyle?.gap ?? undefined}
+        $grid={data.componentMobileStyle?.grid ?? undefined}
+      >
         {data.mobileChildren &&
           data.mobileChildren.map((value: ChildEntity, index: number) => (
             <MobileChild key={index} data={value} />

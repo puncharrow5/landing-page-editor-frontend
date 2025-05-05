@@ -6,8 +6,8 @@ export const Container = styled.div<{ $mobileChildStyle?: MobileChildStyleEntity
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: ${({ $mobileChildStyle }) => $mobileChildStyle?.width || "100%"};
-  height: ${({ $mobileChildStyle }) => $mobileChildStyle?.height || "100%"};
+  width: ${({ $mobileChildStyle }) => $mobileChildStyle?.width || "100px"};
+  height: ${({ $mobileChildStyle }) => $mobileChildStyle?.height || "100px"};
   margin: ${({ $mobileChildStyle }) => $mobileChildStyle?.margin ?? "0"};
   padding: ${({ $mobileChildStyle }) => $mobileChildStyle?.padding ?? "0"};
   border: ${({ $mobileChildStyle }) => $mobileChildStyle?.border ?? "0"};

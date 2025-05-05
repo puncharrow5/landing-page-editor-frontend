@@ -29,9 +29,9 @@ export const Content = styled.div<{ $contentStyle?: ContentStyleEntity }>`
   line-height: ${({ $contentStyle }) => $contentStyle?.mobileLineHeight ?? 1};
 `;
 
-export const ChildrenBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+export const ChildrenBox = styled.div<{ $gap?: string; $grid?: number }>`
+  display: grid;
+  grid-template-columns: repeat(${({ $grid }) => $grid ?? 1}, 1fr);
+  justify-content: center;
+  gap: ${({ $gap }) => $gap ?? 0};
 `;
