@@ -7,6 +7,8 @@ interface Props {
 }
 
 export const Child = ({ data }: Props) => {
+  console.log(data.childStyle?.width);
+
   return (
     <S.Container
       $childStyle={data.childStyle ?? undefined}

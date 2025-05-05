@@ -6,8 +6,8 @@ export const Container = styled.div<{ $childStyle?: ChildStyleEntity }>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: ${({ $childStyle }) => $childStyle?.width || "100%"};
-  height: ${({ $childStyle }) => $childStyle?.height || "100%"};
+  width: ${({ $childStyle }) => ($childStyle?.width ? $childStyle?.width : "100px")};
+  height: ${({ $childStyle }) => ($childStyle?.height ? $childStyle.height : "100px")};
   margin: ${({ $childStyle }) => $childStyle?.margin ?? "0"};
   padding: ${({ $childStyle }) => $childStyle?.padding ?? "0"};
   border: ${({ $childStyle }) => $childStyle?.border ?? "0"};

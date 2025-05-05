@@ -95,13 +95,15 @@ export const ChildForm = ({ index, data, setData, handleReset }: Props) => {
   };
 
   const handleChange = (field: string, value: any) => {
-    if (field.startsWith("childStyle.")) {
-      formik.setFieldValue("childStyle", {
-        ...formik.values.childStyle,
-        [field.replace("childStyle.", "")]: value,
-      });
-    } else {
-      formik.setFieldValue(field, value);
+    switch (true) {
+      case field.startsWith("childStyle."):
+        formik.setFieldValue("childStyle", {
+          ...formik.values.childStyle,
+          [field.replace("childStyle.", "")]: value,
+        });
+        break;
+      default:
+        formik.setFieldValue(field, value);
     }
 
     setData((prev) => {
@@ -112,30 +114,34 @@ export const ChildForm = ({ index, data, setData, handleReset }: Props) => {
       return {
         ...prev,
         components: prev.components?.map((comp) => {
-          if (comp.children?.some((child) => child.id === data.id)) {
-            return {
-              ...comp,
-              children: comp.children.map((child) =>
-                child.id === data.id
-                  ? {
-                      ...child,
-                      ...(isChildStyleField
-                        ? {
-                            childStyle: {
-                              ...child.childStyle!,
-                              [field.replace("childStyle.", "")]: value,
-                            },
-                          }
-                        : {
-                            [field]: value,
-                          }),
-                    }
-                  : child
-              ),
-            };
-          } else {
+          if (!comp.children?.some((child) => child.id === data.id)) {
             return comp;
           }
+
+          const updatedChildren = comp.children.map((child) => {
+            if (child.id !== data.id) return child;
+
+            const updatedChild = { ...child };
+
+            switch (true) {
+              case isChildStyleField:
+                updatedChild.childStyle = {
+                  ...child.childStyle!,
+                  [field.replace("childStyle.", "")]: value,
+                };
+                break;
+
+              default:
+                (updatedChild as any)[field] = value;
+            }
+
+            return updatedChild;
+          });
+
+          return {
+            ...comp,
+            children: updatedChildren,
+          };
         }),
       } as SiteEntity;
     });
@@ -169,6 +175,7 @@ export const ChildForm = ({ index, data, setData, handleReset }: Props) => {
         contentMargin: data.childStyle?.contentMargin ?? "",
       },
     },
+    enableReinitialize: true,
     onSubmit: handleSubmit,
   });
 
