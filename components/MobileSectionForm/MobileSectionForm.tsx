@@ -11,7 +11,6 @@ import {
 } from "@/graphql/generated/types";
 import { useFormik } from "formik";
 import { PanelButton } from "../PanelButton";
-import { getComponentType } from "@/utils";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import * as S from "./MobileSectionForm.style";
 
@@ -310,7 +309,6 @@ export const MobileSectionForm = ({ data, setData, handleReset, handleDelete }: 
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="titleStyle.mobileSize"
                 value={formik.values.titleStyle.mobileSize ?? undefined}
                 onChange={(e) => handleChange("titleStyle.mobileSize", e.target.value)}
@@ -369,7 +367,6 @@ export const MobileSectionForm = ({ data, setData, handleReset, handleDelete }: 
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="contentStyle.mobileSize"
                 value={formik.values.contentStyle.mobileSize ?? undefined}
                 onChange={(e) => handleChange("contentStyle.mobileSize", e.target.value)}

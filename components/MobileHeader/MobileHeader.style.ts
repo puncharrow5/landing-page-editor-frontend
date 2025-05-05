@@ -22,7 +22,7 @@ export const Header = styled.div<{
   height: ${({ $height }) => ($height ? $height : "80px")};
   top: 0;
   padding: ${({ $padding }) => $padding ?? undefined};
-  background-color: ${({ $backgroundColor }) => $backgroundColor ?? undefined};
+  background-color: ${({ $backgroundColor }) => $backgroundColor ?? "#fff"};
   z-index: 1;
   /* border-bottom: 1px solid #e7e7ec; */
 `;
