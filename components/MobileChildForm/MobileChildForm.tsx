@@ -28,8 +28,6 @@ export const MobileChildForm = ({ index, data, setData, handleReset }: Props) =>
 
   const [open, setOpen] = useState<boolean>(false);
 
-  const [file, setFile] = useState<File>();
-
   const [loadUpdateMobileChild, { loading: updateLoading }] = useUpdateMobileChildMutation({
     onCompleted: () => {
       client.refetchQueries({ include: [FindOneSiteByIdDocument] });
@@ -84,16 +82,16 @@ export const MobileChildForm = ({ index, data, setData, handleReset }: Props) =>
     });
   };
 
+  const handleOpenUpload = () => {
+    document.getElementById("uploadBackground")?.click();
+  };
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
 
     if (selectedFile) {
-      setFile(selectedFile);
+      loadUploadImage({ variables: { file: selectedFile } });
     }
-  };
-
-  const handleOpenUpload = () => {
-    document.getElementById("uploadFile")?.click();
   };
 
   const handleChange = (field: string, value: any) => {

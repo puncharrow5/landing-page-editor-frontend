@@ -836,7 +836,6 @@ export type MutationUpdateHeaderArgs = {
 
 export type MutationUpdateMobileChildArgs = {
   content?: InputMaybe<Scalars['String']['input']>;
-  file?: InputMaybe<Scalars['Upload']['input']>;
   id: Scalars['Int']['input'];
   mobileChildStyle?: InputMaybe<MobileChildStyleInput>;
   title?: InputMaybe<Scalars['String']['input']>;
@@ -1082,7 +1081,6 @@ export type UpdateMobileChildMutationVariables = Exact<{
   title?: InputMaybe<Scalars['String']['input']>;
   content?: InputMaybe<Scalars['String']['input']>;
   mobileChildStyle?: InputMaybe<MobileChildStyleInput>;
-  file?: InputMaybe<Scalars['Upload']['input']>;
 }>;
 
 
@@ -1611,13 +1609,12 @@ export type UpdateChildMutationHookResult = ReturnType<typeof useUpdateChildMuta
 export type UpdateChildMutationResult = Apollo.MutationResult<UpdateChildMutation>;
 export type UpdateChildMutationOptions = Apollo.BaseMutationOptions<UpdateChildMutation, UpdateChildMutationVariables>;
 export const UpdateMobileChildDocument = gql`
-    mutation UpdateMobileChild($id: Int!, $title: String, $content: String, $mobileChildStyle: MobileChildStyleInput, $file: Upload) {
+    mutation UpdateMobileChild($id: Int!, $title: String, $content: String, $mobileChildStyle: MobileChildStyleInput) {
   updateMobileChild(
     id: $id
     title: $title
     content: $content
     mobileChildStyle: $mobileChildStyle
-    file: $file
   )
 }
     `;
@@ -1640,7 +1637,6 @@ export type UpdateMobileChildMutationFn = Apollo.MutationFunction<UpdateMobileCh
  *      title: // value for 'title'
  *      content: // value for 'content'
  *      mobileChildStyle: // value for 'mobileChildStyle'
- *      file: // value for 'file'
  *   },
  * });
  */
