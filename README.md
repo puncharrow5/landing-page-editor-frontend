@@ -1,4 +1,4 @@
-# 랜딩페이지 에디터 BACKEND README
+# 랜딩페이지 에디터 FRONTEND README
 
 
 ## 프로젝트 소개
