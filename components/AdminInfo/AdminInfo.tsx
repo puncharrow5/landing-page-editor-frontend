@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  FindAdminDocument,
   useFindAdminQuery,
   useFindManyHistoryQuery,
   useLogoutMutation,
@@ -13,10 +14,12 @@ import { CameraIcon } from "@heroicons/react/24/outline";
 import * as S from "./AdminInfo.style";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
+import { useApolloClient } from "@apollo/client";
 
 export const AdminInfo = () => {
-  const { ToastMessage } = useToastMessage();
+  const client = useApolloClient();
   const router = useRouter();
+  const { ToastMessage } = useToastMessage();
 
   const { data: adminData, refetch } = useFindAdminQuery({ fetchPolicy: "network-only" });
 
@@ -27,9 +30,9 @@ export const AdminInfo = () => {
 
   const [loadUpdateProfileImage, { loading: uploadImageLoading }] = useUpdateProfileImageMutation({
     onCompleted: (mutationData) => {
-      ToastMessage("success", "프로필 사진이 변경되었습니다.");
+      client.refetchQueries({ include: [FindAdminDocument] });
 
-      router.push("/login");
+      ToastMessage("success", "프로필 사진이 변경되었습니다.");
     },
     onError: (e) => {
       ToastMessage("error", `${e.message ?? e}`);
