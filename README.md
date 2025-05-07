@@ -210,10 +210,14 @@
 - 회원 목록 조회 및 권한 변경 등 회원 관리 기능 강화
 - 더 직관적이고 사용자 친화적인 UI 편집 기능 제공
 
+<br/>
+
 ## 관련 프로젝트
 <a href="https://github.com/puncharrow5/landing-page-editor-server" target="_blank">랜딩페이지 백엔드 리포지토리</a> 
 <br/>
 <a href="https://github.com/puncharrow5/landing-page-editor-viewer" target="_blank">랜딩페이지 웹뷰어 리포지토리</a>
+
+<br/>
 
 ## CONTACT
 <a href="mailto:seunghyeon9696@gmail.com">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
@@ -221,7 +225,7 @@
 <a href="https://geode-divan-811.notion.site/a44da1efdf5b47ea8fe12a8f85b216ad" target="_blank">![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)</a>
 <a href="https://www.linkedin.com/in/oh-seunghyeon-352708307" target="_blank">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
-
+<br/>
 
 
 
