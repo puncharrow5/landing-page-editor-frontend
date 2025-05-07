@@ -56,7 +56,7 @@ export const LoginForm = () => {
     <S.Container>
       <S.Box>
         <h1 className="mb-6 text-center text-3xl font-bold">로그인</h1>
-        <S.Label>관리자 이메일</S.Label>
+        <S.Label>이메일</S.Label>
         <S.Input
           type="email"
           name="email"
