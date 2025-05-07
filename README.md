@@ -15,9 +15,9 @@
 
 ## 프로젝트 구성
 
-- <a href="https://github.com/puncharrow5/landing-page-editor-frontend">프론트엔드<a/> : 랜딩페이지 에디터 클라이언트
-- <a href="https://github.com/puncharrow5/landing-page-editor-server">백엔드</a> : 인증, 데이터 저장, 이메일 전송 등 API 처리
-- <a href="https://github.com/puncharrow5/landing-page-editor-viewer">웹 뷰어</a> : 랜딩페이지 에디터의 결과물을 출력하는 클라이언트
+- <a href="https://github.com/puncharrow5/landing-page-editor-frontend" target="_blank">프론트엔드<a/> : 랜딩페이지 에디터 클라이언트
+- <a href="https://github.com/puncharrow5/landing-page-editor-server" target="_blank">백엔드</a> : 인증, 데이터 저장, 이메일 전송 등 API 처리
+- <a href="https://github.com/puncharrow5/landing-page-editor-viewer" target="_blank">웹뷰어</a> : 랜딩페이지 에디터의 결과물을 출력하는 클라이언트
 
 <br>
 
@@ -211,14 +211,15 @@
 - 더 직관적이고 사용자 친화적인 UI 편집 기능 제공
 
 ## 관련 프로젝트
-랜딩페이지 백엔드 리포지토리
-랜딩페이지 웹 뷰어 리포지토리
+<a href="https://github.com/puncharrow5/landing-page-editor-server" target="_blank">랜딩페이지 백엔드 리포지토리</a> 
+<br/>
+<a href="https://github.com/puncharrow5/landing-page-editor-viewer" target="_blank">랜딩페이지 웹뷰어 리포지토리</a>
 
 ## CONTACT
 <a href="mailto:seunghyeon9696@gmail.com">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
-<a href="https://github.com/puncharrow5">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
-<a href="https://geode-divan-811.notion.site/a44da1efdf5b47ea8fe12a8f85b216ad">![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)</a>
-<a href="https://www.linkedin.com/in/oh-seunghyeon-352708307">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+<a href="https://github.com/puncharrow5" target="_blank">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
+<a href="https://geode-divan-811.notion.site/a44da1efdf5b47ea8fe12a8f85b216ad" target="_blank">![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)</a>
+<a href="https://www.linkedin.com/in/oh-seunghyeon-352708307" target="_blank">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
 
 
