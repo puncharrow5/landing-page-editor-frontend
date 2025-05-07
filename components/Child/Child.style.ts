@@ -17,15 +17,15 @@ export const Container = styled.div<{ $childStyle?: ChildStyleEntity }>`
 `;
 
 export const Title = styled.p<{ $childStyle?: ChildStyleEntity }>`
-  font-size: ${({ $childStyle }) => $childStyle?.titleSize || 10}px;
-  color: ${({ $childStyle }) => $childStyle?.titleColor || "#000"};
-  line-height: ${({ $childStyle }) => $childStyle?.titleLineHeight || "1"};
-  margin: ${({ $childStyle }) => $childStyle?.titleMargin || "0"};
+  font-size: ${({ $childStyle }) => $childStyle?.titleSize ?? "10px"};
+  color: ${({ $childStyle }) => $childStyle?.titleColor ?? "#000"};
+  line-height: ${({ $childStyle }) => $childStyle?.titleLineHeight ?? "1"};
+  margin: ${({ $childStyle }) => $childStyle?.titleMargin ?? "0"};
 `;
 
 export const Content = styled.p<{ $childStyle?: ChildStyleEntity }>`
-  font-size: ${({ $childStyle }) => $childStyle?.contentSize || 10}px;
-  color: ${({ $childStyle }) => $childStyle?.contentColor || "#000"};
-  line-height: ${({ $childStyle }) => $childStyle?.contentLineHeight || "1"};
-  margin: ${({ $childStyle }) => $childStyle?.contentMargin || "0"};
+  font-size: ${({ $childStyle }) => $childStyle?.contentSize ?? "10px"};
+  color: ${({ $childStyle }) => $childStyle?.contentColor ?? "#000"};
+  line-height: ${({ $childStyle }) => $childStyle?.contentLineHeight ?? "1"};
+  margin: ${({ $childStyle }) => $childStyle?.contentMargin ?? "0"};
 `;

@@ -17,15 +17,15 @@ export const Container = styled.div<{ $mobileChildStyle?: MobileChildStyleEntity
 `;
 
 export const Title = styled.p<{ $mobileChildStyle?: MobileChildStyleEntity }>`
-  font-size: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleSize || 10}px;
-  color: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleColor || "#000"};
-  line-height: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleLineHeight || "1"};
-  margin: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleMargin || "0"};
+  font-size: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleSize ?? "10px"};
+  color: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleColor ?? "#000"};
+  line-height: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleLineHeight ?? "1"};
+  margin: ${({ $mobileChildStyle }) => $mobileChildStyle?.titleMargin ?? "0"};
 `;
 
 export const Content = styled.p<{ $mobileChildStyle?: MobileChildStyleEntity }>`
-  font-size: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentSize || 10}px;
-  color: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentColor || "#000"};
-  line-height: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentLineHeight || "1"};
-  margin: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentMargin || "0"};
+  font-size: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentSize ?? 10}px;
+  color: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentColor ?? "#000"};
+  line-height: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentLineHeight ?? "1"};
+  margin: ${({ $mobileChildStyle }) => $mobileChildStyle?.contentMargin ?? "0"};
 `;
