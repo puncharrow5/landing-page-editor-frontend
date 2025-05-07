@@ -52,7 +52,7 @@ export const Box = styled.div<{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   padding: ${({ $mobileInquiryStyle }) => $mobileInquiryStyle?.padding ?? ""};
   gap: ${({ $mobileInquiryStyle }) => $mobileInquiryStyle?.gap ?? ""};
   background-color: ${({ $mobileInquiryStyle }) => $mobileInquiryStyle?.backgroundColor ?? "#fff"};
