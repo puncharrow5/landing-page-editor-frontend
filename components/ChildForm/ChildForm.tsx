@@ -334,7 +334,6 @@ export const ChildForm = ({ index, data, setData, handleReset }: Props) => {
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="childStyle.titleSize"
                 value={formik.values.childStyle.titleSize ?? undefined}
                 onChange={(e) => handleChange("childStyle.titleSize", e.target.value)}
@@ -393,7 +392,6 @@ export const ChildForm = ({ index, data, setData, handleReset }: Props) => {
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="childStyle.contentSize"
                 value={formik.values.childStyle.contentSize ?? undefined}
                 onChange={(e) => handleChange("childStyle.contentSize", e.target.value)}

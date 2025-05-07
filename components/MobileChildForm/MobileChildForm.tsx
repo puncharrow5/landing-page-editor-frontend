@@ -327,7 +327,6 @@ export const MobileChildForm = ({ index, data, setData, handleReset }: Props) =>
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="mobileChildStyle.titleSize"
                 value={formik.values.mobileChildStyle.titleSize ?? undefined}
                 onChange={(e) => handleChange("mobileChildStyle.titleSize", e.target.value)}
@@ -386,7 +385,6 @@ export const MobileChildForm = ({ index, data, setData, handleReset }: Props) =>
             <S.FontSetting>
               <p className="font-bold">텍스트 크기</p>
               <S.Input
-                type="number"
                 name="mobileChildStyle.contentSize"
                 value={formik.values.mobileChildStyle.contentSize ?? undefined}
                 onChange={(e) => handleChange("mobileChildStyle.contentSize", e.target.value)}
