@@ -215,10 +215,10 @@
 랜딩페이지 웹 뷰어 리포지토리
 
 ## CONTACT
-Email : 
-Notion : 
-Github : 
-LinkedIn : 
+<a href="mailto:seunghyeon9696@gmail.com">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
+<a href="https://github.com/puncharrow5">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
+<a href="https://geode-divan-811.notion.site/a44da1efdf5b47ea8fe12a8f85b216ad">![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)</a>
+<a href="https://www.linkedin.com/in/oh-seunghyeon-352708307">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
 
 
